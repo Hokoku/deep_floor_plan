@@ -7,3 +7,4 @@ absl-py
 mock
 scipy==1.1.0
 matplotlib
+pillow
