@@ -1,0 +1,17 @@
+{
+  "name": "deep-floor-plan",
+  "build": {
+    "dockerfile": "./Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.black-formatter",
+        "ms-python.isort",
+        "christian-kohler.path-intellisense",
+        "github.copilot"
+      ]
+    }
+  }
+}

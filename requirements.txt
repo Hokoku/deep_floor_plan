@@ -1,0 +1,8 @@
+h5py==2.6.0
+jpeg
+libpng
+libtiff
+protobuf
+absl-py
+mock
+scipy==1.1.0
