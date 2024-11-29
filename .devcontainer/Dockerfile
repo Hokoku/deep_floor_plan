@@ -11,6 +11,9 @@ RUN curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/downloa
 RUN bash Miniforge3-$(uname)-$(uname -m).sh -b
 
 ENV PATH=$PATH:/root/miniforge3/bin/
+ENV PATH="/usr/local/cuda/bin:$PATH"
+ENV LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
+
 RUN mamba init && mamba create -n floorplan python=2.7
 
 WORKDIR /workspace
